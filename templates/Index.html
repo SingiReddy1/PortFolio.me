@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="box" id="Home">
+  <img class="svg" src="{% static 'images/portfolio1.svg' %}" alt="My Happy SVG" />
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ff3273" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,32C384,32,480,32,576,48C672,64,768,96,864,122.7C960,149,1056,171,1152,154.7C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg> -->
+  <h3>Hello, My Name is</h3>
+  <h1>Sai Nikhil Reddy</h1>
+  <p class="line1"></p>
+  <span id="span">A Creative Freelancer & Full Stack Developer</span>
+  <br />
+  <!-- <a class="button1" type="button" onclick="alert('Hello World')">
+    KNOW MORE
+  </a> -->
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
+    </div>
+    <div class="box" id="About">
+  <!-- <img src="theAssassin.jpg" alt="the assassin" id="img1"> -->
+  <img class="svg1" src="{% static 'images/resume.svg' %}" alt="resumesvg" />
+  <div class="seperate">
+    <p class="line2"></p>
+    <span class="span" id="AboutMe">ABOUT ME</span>
+    <h2>Who Am I</h2>
+    <p class="line3">
+      My name is Sai Nikhil Reddy. I'm a Freelance Full Stack Developer
+      based in Hyderabad, INDIA. and I'm very passionate and dedicated to my
+      work. With 6 years experience asa professional Full Stack Developer. I
+      have acquired the skills necessary to build great and premium
+      websites.
+    </p>
+    <p class="line4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      ut in ratione quae exercitationem. Atque, est earum magni suscipit
+      alias tempora blanditiis delectus quam ullam consequatur nemo iste
+      deserunt tenetur.
+    </p>
+    <div class="all-rows">
+      <div class="all-columns">
+        <h1>Html5</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>jQuery</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>Php</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>Css3</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>VueJs</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>Sass</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>Python</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>MySQL</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+        <span class="fa fa-star"></span>
+      </div>
+
+      <div class="all-columns">
+        <h1>Django</h1>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star fa-star-half-full"></span>
+      </div>
+    </div>
+    <a
+      href="{% static 'images/S.SAINIKHILREDDY(RESUME).pdf' %}"
+      download="s.sainikhilreddy(resume)"
+    >
+      <button class="learn-more">
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">DOWNLOAD CV</span>
+      </button>
+    </a>
+  </div>
+    </div>
+    <div class="box" id="Services">
+      <div class="headings">
+        <p class="line5"></p>
+        <span class="span" id="AboutMe">SERVICES</span>
+        <h2>What Can I Do</h2>
+      </div>
+      <div class="boxof6">
+        <div class="oneof6">
+          <p id="icon1">
+            <i class="fa-solid fa-pencil" style="color: #ff3273"></i>
+          </p>
+          <h4>Creative Design</h4>
+          <p id="para1">
+            Creative design involves using computer-generated imagery and
+            digital animation to visualise a product. It aims to produce unique
+            and memorable designs that stand out so that customers may easily
+            identify a brand or product.
+          </p>
+        </div>
+        <div class="twoof6">
+          <p id="icon2">
+            <i class="fa-solid fa-flag" style="color: #ff3273"></i>
+          </p>
+          <h4>Branding</h4>
+          <p id="para2">
+            Branding is the process of creating a distinct identity for a
+            business in the mind of your target audience and consumers. At the
+            the most basic level, branding is made up of a company's name and
+            logo, visual design, mission, and tone of voice.
+          </p>
+        </div>
+        <div class="threeof6">
+          <p id="icon3">
+            <i class="fa-solid fa-laptop" style="color: #ff3273"></i>
+          </p>
+          <h4>User Interface</h4>
+          <p id="para3">
+            The user interface (UI) is the point of human-computer interaction
+            and communication in a device. This can include display screens,
+            keyboards, a mouse and the appearance of a desktop. It is also the
+            way through which a user interacts with an application or a website.
+          </p>
+        </div>
+        <div class="fourof6">
+          <p id="icon4">
+            <i class="fa-solid fa-briefcase" style="color: #ff3273"></i>
+          </p>
+          <h4>User Experience</h4>
+          <p id="para4">
+            User experience (UX) focuses on having a deep understanding of
+            users, what they need, what they value, their abilities, and also
+            their limitations. It also takes into account the business goals and
+            objectives of the group managing the project.
+          </p>
+        </div>
+        <div class="fiveof6">
+          <p id="icon5">
+            <i class="fa-solid fa-code" style="color: #ff3273"></i>
+          </p>
+          <h4>Clean Code</h4>
+          <p id="para5">
+            Clean Code is a term from software development and addresses the
+            clear, comprehensible, traceable, logical and disciplined
+            implementation of code. The goal is to produce software efficiently
+            and effectively, and to design the code so that it is easily.
+            readable, changeable, expandable.
+          </p>
+        </div>
+        <div class="sixof6">
+          <p id="icon6">
+            <i class="fa-solid fa-life-ring" style="color: #ff3273"></i>
+          </p>
+          <h4>Fast Support</h4>
+          <p id="para6">
+            FastSupport is a genuine website that lets you access your computer
+            from another location using their GoToAssist program. Even though
+            this is a legitimate website, cybercriminals use it to make money.
+            GoToAssist lets tech support people look into problems on your
+            computer and fix them remotely.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box" id="Resume">
+      <div class="Resume-heading">
+        <p class="Resume-line"></p>
+        <span class="span" id="Resume-name">resume</span>
+        <h2>Qualifications</h2>
+      </div>
+      <div class="experience">
+        <h1>Education</h1>
+        <div class="card1" id="card1">
+          <p class="line6"></p>
+          <h4>Edge Soft IT Solutions</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            reprehenderit ullam deleniti blanditiis repudiandae qui, iure
+            suscipit iusto voluptates unde rerum harum omnis!
+          </p>
+        </div>
+        <div class="card2" id="card2">
+          <p class="line6"></p>
+          <h4>Shriram Finance Limited</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            corrupti, porro vitae dolorem debitis earum inventore eius laborum
+            delectus magni ullam at totam?
+          </p>
+        </div>
+      </div>
+      <div class="education">
+        <h1>Experience</h1>
+        <div class="educard1" id="educard1">
+          <p class="line6"></p>
+          <h4>Bachelor of Engineering</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            reprehenderit ullam deleniti blanditiis repudiandae qui, iure
+            suscipit iusto voluptates unde rerum harum omnis!
+          </p>
+        </div>
+        <div class="educard2" id="educard2">
+          <p class="line6"></p>
+          <h4>Bachelor of Engineering</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            corrupti, porro vitae dolorem debitis earum inventore eius laborum
+            delectus magni ullam at totam?
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endblock body %}
+    

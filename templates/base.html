@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/stylesheet.css' %}"
+    />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <script defer src="{% static 'js/Js.js' %}"></script>
+  </head>
+  <body>
+    <header class="header" id="header1">
+      <p id="p1">
+        <a href="/">s<span>n</span>r</a>
+      </p>
+      <li id="myLinks">
+        <a class="Home active" href="#Home">Home</a>
+        <a class="About" href="#About">About</a>
+        <a class="Services" href="#Services">Services</a>
+        <a class="Resume" href="#Resume">Resume</a>
+        <a class="Contact" href="#Contact">Contact</a>
+      </li>
+      <!-- <p id="p2">S.SAI NIKHIL REDDY</p> -->
+    </header>
+    <div class="msg" id="close" style="display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    z-index: 1;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    width: 600px;
+    padding: 15px 30px 30px;
+    background-color: rgb(33 32 32);" >
+      <img src="" alt=""><i class="fa-solid fa-circle-check fa-2xl" style="color: #ff3273;font-size: 60px;"></i></img>
+      <h2 style="margin-top: 60px;
+      font-size: 40px;">Thank You!</h2>
+      <p style="font-size: 18px;">Your details has been successfully submitted. Thanks!</p>
+      <button type="button" id="stop" value="stop" style="cursor: pointer;
+      z-index: 1;
+      height: 40px;
+      width: 100%;
+      color: black;
+      left: 0%;
+      background-color: white;">OK</button>
+    </div>
+{% block body %}
+
+
+{% endblock body %}
+<div class="box" id="Contact" style="position: relative;" >
+  <div class="info">
+    <h1>Let<span>'</span>s get started<span>.</span></h1>
+    <h3>Contact Me</h3>
+  </div>
+  <div class="form">
+    <!-- <h1>Contact Us</h1> -->
+    <form action="" method="POST">
+      {% csrf_token %}
+      <p class="form-text">
+        My name is
+        <input
+          name="name"
+          id="input"
+          autocomplete="off"
+          type="text"
+          placeholder="YOUR FULL NAME HERE"
+          required
+        />
+        and I have a
+        <input
+          name="msg"
+          id="input"
+          autocomplete="off"
+          type="text"
+          placeholder="WEBSITE, FULL-TIME JOB, ETC."
+          required
+        />
+        that needs help<span>.</span> You can reach me at
+        <input
+          name="email"
+          id="email"
+          autocomplete="off"
+          type="email"
+          placeholder="YOUR EMAIL ADDRESS"
+          required
+        />
+        to get things started<span>.</span>
+      </p>
+
+      <button id="submit" class="learn-more" type="submit">
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Submit</span>
+      </button>
+    </form>
+</div>
+</div>
+</body>
+  <script>
+      const targetDiv = document.getElementById("close");
+const btn = document.getElementById("stop");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+  </script>
+</html>
